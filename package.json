@@ -9,10 +9,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/es6-promise": "0.0.32",
     "@types/react": "^0.14.49",
+    "@types/react-addons-update": "^0.14.14",
     "@types/react-dom": "^0.14.18",
+    "@types/react-redux": "^4.4.32",
+    "@types/redux": "^3.6.31",
+    "@types/redux-thunk": "^2.1.31",
+    "es6-promise": "^4.0.5",
     "react": "^15.4.0",
-    "react-dom": "^15.4.0"
+    "react-addons-update": "^15.4.1",
+    "react-dom": "^15.4.0",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
   },
   "devDependencies": {
     "source-map-loader": "^0.1.5",

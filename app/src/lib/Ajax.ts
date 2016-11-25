@@ -1,4 +1,4 @@
-class Ajax {
+export default class Ajax {
 
     private readonly READY_STATUS_CODE = 4;
 
@@ -40,5 +40,3 @@ class Ajax {
         request.send(data);
     }
 }
-
-export = Ajax;

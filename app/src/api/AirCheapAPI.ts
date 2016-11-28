@@ -1,5 +1,5 @@
 import PromiseAjax from '../lib/PromiseAjax'
-import Airport from '../models/airport'
+import {Airport} from '../models/airport'
 
 export default class AirCheapAPI{
 

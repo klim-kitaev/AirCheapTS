@@ -1,7 +1,7 @@
 import Constants from '../Constants'
-import Airport from '../models/Airport'
+import {Airport} from '../models/Airport'
 import * as Interfaces from '../models/IAction' 
-import update from 'react-addons-update'
+import update =require('react-addons-update')
 
 const initialState:Interfaces.IRouteState={
     origin:'',

@@ -1,5 +1,5 @@
 import Constants from '../Constants'
-import Airport from '../models/Airport'
+import {Airport} from '../models/Airport'
 import * as Interfaces from '../models/IAction' 
 
 const airports=(state:Airport[]=[],action:Interfaces.IActionAirportsList)=>{

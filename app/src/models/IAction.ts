@@ -1,4 +1,4 @@
-import Airport from './Airport'
+import {Airport,AirportView} from './Airport'
 
 export interface IAction{
     type:string
@@ -22,6 +22,10 @@ export interface IDispatch{
     ():void;
 }
 
+export interface IDispatchChooseAiport{
+    (targer:string, airport:AirportView):void;
+}
+
 export interface IActionAirportsList extends IAction{
     airports:Airport[]
 }
@@ -30,5 +34,10 @@ export interface IActionAirportsList extends IAction{
 export interface IRouteState{
     origin:string;
     desctination:string;
+}
+
+export interface IState{
+    airports:Airport[];
+    route:IRouteState;
 }
 

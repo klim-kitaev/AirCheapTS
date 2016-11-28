@@ -1,12 +1,12 @@
 import Constants from '../Constants'
 import AirCheapAPI from '../api/AirCheapAPI'
 import * as Interfaces from '../models/IAction' 
-import Airport from '../models/Airport'
+import {Airport,AirportView} from '../models/Airport'
 
-class AirportActionCreators{
+export default class AirportActionCreators{
 
     // Regular Action creator
-    static chooseAirport(target: string, airport:any):Interfaces.IActionAirport{
+    static chooseAirport(target: string, airport:AirportView):Interfaces.IActionAirport{
         return{
             type:Constants.CHOOSE_AIRPORT,
             target:target,
@@ -27,7 +27,7 @@ class AirportActionCreators{
     }
 
     // Thunk Action creator
-    static fetchAirportsAsync(origin:string, destination:string){
+    static fetchAirportsAsync(){
         return (dispatch:any)=>{
             dispatch(this._requestAirport());
             AirCheapAPI.fetchAirports().then(
